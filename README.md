@@ -10,9 +10,9 @@
 ### Created by a 4 person team, between March and May 2018
 
 #### Features:
-* browsing a wall with listings consisting of a topic, a place in space and time, a list of people comming and some predefined tags
+* browsing a wall with listings consisting of a topic, a place in space and time, a list of people comming and some predefined tags\
 ![](http://students.mimuw.edu.pl/~jl385826/hosting/viewing50.gif)
-* searching listings by tags
+* searching listings by tags\
 ![](http://students.mimuw.edu.pl/~jl385826/hosting/choosing_tags50.gif)
 * registration with a verification link sent to an e-mail
 * changing password with a reset code sent to an e-mail
