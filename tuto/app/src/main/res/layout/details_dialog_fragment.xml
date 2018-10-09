@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsDialog"
+    style="@style/DetailsDialogLayout"
+    android:minWidth="300dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingBottom="10sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/DetailsText" />
+
+            <TextView
+                android:id="@+id/duration"
+                style="@style/DetailsText" />
+
+            <TextView
+                android:id="@+id/place"
+                style="@style/DetailsText" />
+
+            <TextView
+                android:id="@+id/limit"
+                style="@style/DetailsText" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/DetailsText"
+                android:layout_marginTop="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="14sp"
+                android:paddingTop="7sp"
+                android:paddingLeft="5sp"
+                android:text="Lista uczestników"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/participantsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/joinButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0sp"
+        android:fontFamily="sans-serif-condensed"
+        android:minHeight="0sp"
+        android:paddingBottom="0sp"
+        android:text="@string/join_session"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:visibility="gone" />
+
+</LinearLayout>

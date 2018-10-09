@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_show_wall"
+        android:icon="@drawable/ic_show_wall"
+        android:title="@string/show_wall_menu_item" />
+
+    <item
+        android:id="@+id/nav_my_sessions"
+        android:icon="@drawable/ic_my_sessions"
+        android:title="@string/my_sessions_menu_item" />
+
+    <item
+        android:id="@+id/nav_saved_sessions"
+        android:icon="@drawable/ic_saved_sessions"
+        android:title="@string/saved_sessions_menu_item" />
+
+    <item
+        android:id="@+id/nav_sessions_archive"
+        android:icon="@drawable/ic_sessions_archive"
+        android:title="@string/sessions_archive_menu_item" />
+
+    <item
+        android:id="@+id/nav_my_account"
+        android:icon="@drawable/ic_my_account"
+        android:title="@string/my_account_menu_item" />
+
+</menu>

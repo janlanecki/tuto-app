@@ -1,0 +1,38 @@
+INSERT INTO sessions VALUES (DEFAULT, 'Kernel Linuxa', '2018-04-20', '14:00', 90, 10, 'Wydział MIM', 'Tylko dla miłośników pingwinka.', 1);
+INSERT INTO sessions VALUES (DEFAULT, 'AI', '2018-05-10', '15:45', 60, 20, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 2);
+INSERT INTO sessions VALUES (DEFAULT, 'Asembler', '2018-04-01', '03:00', 15, 3, 'Przed wydziałem MIM', 'To nie żart. ;-)', 3);
+INSERT INTO sessions VALUES (DEFAULT, 'Kartkówka z sieci', '2018-03-20', '10:15', 45, 20, 'Laby', 'Za 1 pkt.', 4);
+INSERT INTO sessions VALUES (DEFAULT, 'Kolokwium z MD', '2018-04-20', '14:00', 90, 10, 'Wydział MIM', 'Tylko dla miłośników pingwinka.', 1);
+INSERT INTO sessions VALUES (DEFAULT, 'Some random stuff', '2018-05-30', '21:00', 45, 50, 'Unknown', 'Spotkanie pełne wrażeń.', 2);
+INSERT INTO sessions VALUES (DEFAULT, 'Czy ktoś mi wyjaśni algorytm PAXOS?', '2018-04-05', '08:05', 10, 1, 'Wydział MIM', 'Bardzo potrzebuję.', 3);
+INSERT INTO sessions VALUES (DEFAULT, 'Nowoczesne algorytmy tekstowe', '2018-03-31', '10:00', 120, 12, 'Wydział MIM', 'Dyskusja o potencjalnych optymalizacjach.', 4);
+INSERT INTO sessions VALUES (DEFAULT, 'RFC 1149 vs RFC 2549', '2018-04-13', '10:00', 300, 5, 'Wydział MIM - 5. piętro', 'Bardzo pogłębiona dyskusja. Wymagana poglębiona wiedza wstępna w temacie.', 1);
+INSERT INTO sessions VALUES (DEFAULT, 'Powtórka przed egzaminem z WWW', '2018-06-01', '12:05', 120, 4, 'Stancja Zbyszka', 'Radzę przyjść z laptopami. ;-)', 2);
+INSERT INTO sessions VALUES (DEFAULT, 'Twierdzenie Poincarégo', '2018-05-10', '15:45', 60, 20, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 3);
+INSERT INTO sessions VALUES (DEFAULT, 'Postępy w dowodzeniu hipotezy Collatza', '2018-05-10', '15:45', 60, 20, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 4);
+INSERT INTO sessions VALUES (DEFAULT, 'Kolokwium z RPiSu', '2018-05-10', '15:45', 60, 20, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 1);
+INSERT INTO sessions VALUES (DEFAULT, 'Zastosowania liczby Alcuina grafu', '2018-05-10', '15:45', 60, 2, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 2);
+INSERT INTO sessions VALUES (DEFAULT, 'Powtórka z przestrzeni Banacha', '2018-05-10', '15:45', 60, 30, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 3);
+INSERT INTO sessions VALUES (DEFAULT, 'Pomoc z COBOLem', '2018-05-10', '13:45', 180, 1, 'FUW', 'Bardziej teoretyczno/filozoficzne podejście.', 4);
+INSERT INTO sessions VALUES (DEFAULT, 'Nauka Boosta', '2018-05-10', '11:00', 90, 10, 'FUW', 'Dla fanów C++.', 1);
+INSERT INTO sessions VALUES (DEFAULT, 'DNNs', '2018-05-10', '15:45', 60, 20, 'FUW', 'Warto mieć pewne zaznajomienie z AI.', 2);
+INSERT INTO sessions VALUES (DEFAULT, 'Protokoły sieciowe raz jeszcze', '2018-05-10', '15:45', 45, 80, 'FUW', 'Poprawka kolokwium z SIK.', 3);
+INSERT INTO sessions VALUES (DEFAULT, 'Swobodne rozmowy o blockchainie', '2018-05-10', '15:45', 60, 25, 'FUW', 'Potencjalne zastosowania biznesowe tej technologii.', 4);
+
+INSERT INTO tags VALUES (DEFAULT, 'Topologia');
+INSERT INTO tags VALUES (DEFAULT, 'RPiS');
+INSERT INTO tags VALUES (DEFAULT, 'AI/ML');
+INSERT INTO tags VALUES (DEFAULT, 'MD');
+INSERT INTO tags VALUES (DEFAULT, 'Linux');
+
+INSERT INTO categories VALUES (1, 3);
+INSERT INTO categories VALUES (2, 2);
+INSERT INTO categories VALUES (1, 1);
+INSERT INTO categories VALUES (3, 20);
+INSERT INTO categories VALUES (4, 15);
+INSERT INTO categories VALUES (5, 1);
+INSERT INTO categories VALUES (4, 11);
+INSERT INTO categories VALUES (3, 3);
+INSERT INTO categories VALUES (1, 5);
+INSERT INTO categories VALUES (3, 11);
+INSERT INTO categories VALUES (2, 3);

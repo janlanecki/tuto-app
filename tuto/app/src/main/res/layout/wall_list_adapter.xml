@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    style="@style/WallItemWrapper">
+
+    <pl.edu.mimuw.tuto.modules.wall.SupertagsView
+        android:id="@+id/supertags_wrapper"
+        style="@style/WallItemSupertagsWrapper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="-30dp"
+            android:layout_gravity="top|end"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="@string/edit_button" />
+
+        <LinearLayout style="@style/WallItemContentsWrapper">
+
+            <TextView
+                android:id="@+id/header"
+                style="@style/WallAdapterHeader" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/wall_adapter_info_vertical_spacing"
+                android:layout_marginTop="@dimen/wall_adapter_info_vertical_spacing"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/WallAdapterInfoText" />
+
+                <TextView
+                    android:id="@+id/place"
+                    style="@style/WallAdapterInfoText" />
+
+                <TextView
+                    android:id="@+id/author"
+                    style="@style/WallAdapterInfoText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <pl.edu.mimuw.tuto.framework.views.TagListView
+            android:id="@+id/wall_adapter_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signing_up"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="Dodaj swoje prawdziwe imię i nazwisko, żeby inni użytkownicy nie musieli
+sprawdzać kim jesteś w USOSwebie." />
+
+            <EditText
+                android:id="@+id/nameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:hint="Imię" />
+
+            <TextView
+                android:id="@+id/nameTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#2962ff"/>
+
+            <EditText
+                android:id="@+id/surnameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="40"
+                android:inputType="textPersonName"
+                android:hint="Nazwisko" />
+
+            <TextView
+                android:id="@+id/surnameTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#2962ff"/>
+
+            <EditText
+                android:id="@+id/emailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="86"
+                android:inputType="textVisiblePassword"
+                android:hint="E-mail"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/emailTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#2962ff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="E-mail musi być postaci: ab123456@students.mimuw.edu.pl lub być w domenie
+mimuw.edu.pl." />
+
+            <EditText
+                android:id="@+id/passwordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="32"
+                android:inputType="textPassword"
+                android:hint="Hasło"/>
+
+            <TextView
+                android:id="@+id/passwordTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#2962ff"/>
+
+            <EditText
+                android:id="@+id/repeatPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="32"
+                android:inputType="textPassword"
+                android:hint="Powtórz hasło"/>
+
+            <TextView
+                android:id="@+id/repeatPasswordTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#2962ff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="Hasło musi zawierać co najmniej 8 znaków w tym wielką literę i cyfrę.
+\nNa podany adres e-mail zostanie wysłany link aktywacyjny działający przez 1 godzinę. Po kliknięciu
+będzie można zalogować się w aplikacji." />
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Utwórz konto" />
+
+            <Button
+                android:id="@+id/resendLinkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prześlij ponownie link" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"/>
+</FrameLayout>

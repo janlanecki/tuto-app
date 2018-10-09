@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Tuto</string>
+
+    <string name="my_account_menu_item">My account</string>
+    <string name="my_sessions_menu_item">Created sessions</string>
+    <string name="show_wall_menu_item">Wall</string>
+    <string name="sessions_archive_menu_item">Sessions archive</string>
+    <string name="saved_sessions_menu_item">Saved sessions</string>
+    <string name="disjoin_question">Are you sure you want to leave this session?</string>
+    <string name="join_session">Join session</string>
+    <string name="disjoin_session">Disjoin session</string>
+    <string name="disjoin_fail">Leaving session failed</string>
+    <string name="disjoin_success">Successfully left session</string>
+    <string name="join_fail">Joining session failed</string>
+    <string name="join_success">Successfully joined session</string>
+
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_password">Invalid password, 8 characters including capital letter
+                                    and digit required</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="signing_up">Signing up</string>
+    <string name="no_picked_tags">No picked tags</string>
+    <string name="no_tags_to_show">There are no tags to be shown</string>
+
+    <string name="new_session">Session</string>
+    <string name="create_session">Create</string>
+    <string name="session_title">Title</string>
+    <string name="session_date">Date</string>
+    <string name="session_time">Hour</string>
+    <string name="session_duration">Duration\n(in min)</string>
+    <string name="session_limit">Number of people\n(inclusively)</string>
+    <string name="session_place">Place</string>
+    <string name="session_description">Description</string>
+
+    <string name="my_accounts_email_label">Email</string>
+    <string name="my_accounts_ignored_tags_label">Ignored tags</string>
+
+    <string name="block_tag_question">Do you want to ignore tag \"%1$s\"?</string>
+    <string name="unblock_tag_question">Do you want to stop ignoring tag \"%1$s\"?</string>
+
+    <string name="filter_tag_question">Do you want to filter tag \"%1$s\"?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="duration_title">Set the number of minutes</string>
+    <string name="people_limit_title">Set the inclusive limit</string>
+
+    <string name="edit_button">Edit a session</string>
+    <string name="edit_button_confirmation">Edit</string>
+</resources>

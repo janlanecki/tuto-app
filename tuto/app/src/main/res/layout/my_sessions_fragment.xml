@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        style="@style/ActionBar"
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            style="@style/ActionBar.Button"
+            android:id="@+id/menu_button"
+            android:src="@drawable/ic_menu_white_32dp"
+            android:layout_gravity="left|start|center_vertical"
+            android:tooltipText="Menu"/>
+
+        <ImageButton
+            style="@style/ActionBar.Button"
+            android:id="@+id/search_button"
+            android:src="@drawable/ic_search_white_32dp"
+            android:layout_gravity="right|end|center_vertical"
+            android:tooltipText="Search"/>
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <pl.edu.mimuw.tuto.framework.views.LoadingRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/wall_side_margin"
+            android:paddingRight="@dimen/wall_side_margin" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        style="@style/ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            style="@style/ActionBar.Button"
+            android:layout_gravity="left|start|center_vertical"
+            android:src="@drawable/ic_menu_white_32dp"
+            android:tooltipText="Menu" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <LinearLayout
+            android:id="@+id/my_account_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/MyAccountEntryLabel"
+                android:text="@string/my_accounts_email_label" />
+
+            <TextView
+                android:id="@+id/my_account_email"
+                style="@style/MyAccountEntry.Text"
+                android:text="tuto@students.mimuw.edu.pl" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                style="@style/MyAccountEntryLabel"
+                android:text="@string/my_accounts_ignored_tags_label" />
+
+            <pl.edu.mimuw.tuto.framework.views.TagListView
+                android:id="@+id/my_account_ignored_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/my_account_progress_bar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/action_bar" />
+</RelativeLayout>
